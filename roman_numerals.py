@@ -17,5 +17,7 @@ roman_numerals = {
     }
 def convert_to_roman_numeral(num):
 
-   
-    return roman_numerals[num]
+    if num > 10 and num < 50:
+        units = num - 10
+        return 'X' + roman_numerals[units]
+    else: return roman_numerals[num]

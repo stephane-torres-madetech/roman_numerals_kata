@@ -18,3 +18,6 @@ def test_one_thousand_returns_M():
 def test_returns_roman_for_one_to_ten():
     for i in range(1, 11):
         assert roman_numerals.convert_to_roman_numeral(i) == roman_numerals.roman_numerals[i]
+
+def test_eleven_returns_XI():
+    assert roman_numerals.convert_to_roman_numeral(11) == 'XI'
