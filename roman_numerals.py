@@ -19,9 +19,13 @@ roman_numerals = {
 def convert_to_roman_numeral(num):
 
     result = ''
+    number_length = get_number_length(num)
     units = roman_numerals[get_number_of_units(num)]
 
-    if get_number_length(num) == 2:
+    if number_length == 1:
+        result = units
+
+    if number_length == 2:
         result = get_roman_tens(num) + units
     
     
@@ -40,19 +44,17 @@ def get_number_of_tens(num):
 
 def get_roman_tens(num):
     result = ''
-    if get_number_of_tens(num) < 4:
-        for i in range(get_number_of_tens(num)):
-            print(i, 'iiiiiiiiiii')
-            print(num, 'num')
+    number_of_tens = get_number_of_tens(num)
+    if number_of_tens < 4:
+        for i in range(number_of_tens):
             result += 'X'
-    elif get_number_of_tens(num) == 4:
+    elif number_of_tens == 4:
         result = 'XL'
-    elif get_number_of_tens(num) == 5:
+    elif number_of_tens == 5:
         result = 'L'
-    elif get_number_of_tens(num) > 5 and get_number_of_tens(num) < 9:
+    elif number_of_tens > 5 and number_of_tens < 9:
         result = 'L'
-        remainder = get_number_of_tens(num) - 5
-        print(remainder, 'tttttttttttttttttttttttt')
+        remainder = number_of_tens - 5
         for i in range(remainder):
             result += 'X'
     else: result = 'XC'
