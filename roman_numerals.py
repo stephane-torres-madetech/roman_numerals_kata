@@ -20,7 +20,7 @@ def convert_to_roman_numeral(num):
     if num > 10 and num <= 20:
         units = num - 10
         return 'X' + roman_numerals[units]
-    elif num > 20:
+    elif num > 20 and num <= 30:
         units = num - 20
         return 'XX' + roman_numerals[units]
     else: return roman_numerals[num]
