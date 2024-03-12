@@ -45,3 +45,5 @@ def convert_to_roman_numeral(num):
 def get_number_length(num):
     return len(str(num))
 
+def get_number_of_tens(num):
+    return 2
