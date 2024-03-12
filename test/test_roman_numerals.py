@@ -21,3 +21,6 @@ def test_returns_roman_for_one_to_ten():
 
 def test_eleven_returns_XI():
     assert roman_numerals.convert_to_roman_numeral(11) == 'XI'
+
+def test_twenty_returns_XX():
+    assert roman_numerals.convert_to_roman_numeral(20) == 'XX'
