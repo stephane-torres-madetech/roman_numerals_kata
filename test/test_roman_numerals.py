@@ -2,7 +2,7 @@
 # simplest cases of that 1 = I, 5 = V, 10 = X
 from .. import roman_numerals
     
-    
+
 
 def testFiveReturnsV():
     assert roman_numerals.ConvertToRomanNumeral(5) == 'V'
@@ -19,3 +19,5 @@ def testFiftyReturnsL():
 def testTwoReturnsII():
     assert roman_numerals.ConvertToRomanNumeral(2) == 'II'
  
+def testFourReturnsIV():
+    assert roman_numerals.ConvertToRomanNumeral(4) == 'IV' 
