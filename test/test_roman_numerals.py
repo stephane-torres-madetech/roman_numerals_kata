@@ -27,3 +27,6 @@ def test_twenty_returns_XX():
 
 def test_twenty_one_returns_XXI():
     assert roman_numerals.convert_to_roman_numeral(21) == 'XXI'
+
+def test_thiry_one_returns_XXXI():
+    assert roman_numerals.convert_to_roman_numeral(31) == 'XXXI'
