@@ -27,6 +27,7 @@ def convert_to_roman_numeral(num):
 
     if number_length == 2:
         result = get_roman_tens(num) + units
+    else: result = roman_numerals[num]
     
     
     return result
