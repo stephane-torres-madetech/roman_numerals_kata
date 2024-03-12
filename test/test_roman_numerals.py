@@ -5,7 +5,15 @@ from .. import roman_numerals
 
 def test_fifty_returns_L():
     assert roman_numerals.convert_to_roman_numeral(50) == 'L'
+
+def test_one_hundred_returns_C():
+    assert roman_numerals.convert_to_roman_numeral(100) == 'C'
  
+def test_five_hundred_returns_D():
+    assert roman_numerals.convert_to_roman_numeral(500) == 'D'
+
+def test_one_thousand_returns_M():
+    assert roman_numerals.convert_to_roman_numeral(1000) == 'M'
 
 def test_returns_roman_for_one_to_ten():
     for i in range(1, 11):

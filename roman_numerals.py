@@ -10,7 +10,9 @@ roman_numerals = {
         8 : 'VIII',
         9 : 'IX',
         10 : 'X',
-        50 : 'L'
+        50 : 'L',
+        100 : 'C',
+        500 : 'D'
     }
 def convert_to_roman_numeral(num):
 
