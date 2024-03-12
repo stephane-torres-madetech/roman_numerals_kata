@@ -33,3 +33,6 @@ def test_thiry_one_returns_XXXI():
 
 def test_forty_returns_XL():
     assert roman_numerals.convert_to_roman_numeral(40) == 'XL'
+
+def test_fourty_one_returns_XLI():
+    assert roman_numerals.convert_to_roman_numeral(41) == 'XLI'
