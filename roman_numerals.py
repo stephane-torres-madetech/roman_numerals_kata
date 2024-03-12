@@ -27,9 +27,10 @@ def convert_to_roman_numeral(num):
     elif num > 20 and num <= 30:
         units = num - 20
         result += 'X' + roman_numerals[units]
-    else: 
-        num > 30 and num <= 40
+    elif num > 30 and num < 40:
         units = num - 30
         result += 'XX' + roman_numerals[units]
+    else:
+        result = 'XL'
     
     return result
