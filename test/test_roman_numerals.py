@@ -22,3 +22,5 @@ def testTwoReturnsII():
 def testFourReturnsIV():
     assert roman_numerals.convert_to_roman_numeral(4) == 'IV' 
 
+def test_six_returns_VI():
+    assert roman_numerals.convert_to_roman_numeral(6) == 'VI'

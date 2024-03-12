@@ -6,6 +6,7 @@ def convert_to_roman_numeral(num):
         2 : 'II',
         4 : 'IV',
         5 : 'V',
+        6 : 'VI',
         10 : 'X',
         50 : 'L'
     }
