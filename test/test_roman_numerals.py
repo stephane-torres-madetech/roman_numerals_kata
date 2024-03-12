@@ -5,19 +5,20 @@ from .. import roman_numerals
 
 
 def testFiveReturnsV():
-    assert roman_numerals.ConvertToRomanNumeral(5) == 'V'
+    assert roman_numerals.convert_to_roman_numeral(5) == 'V'
 
 def testOneReturnsI():
-    assert roman_numerals.ConvertToRomanNumeral(1) == 'I'
+    assert roman_numerals.convert_to_roman_numeral(1) == 'I'
 
 def testTenReturnsX():
-    assert roman_numerals.ConvertToRomanNumeral(10) == 'X' 
+    assert roman_numerals.convert_to_roman_numeral(10) == 'X' 
 
 def testFiftyReturnsL():
-    assert roman_numerals.ConvertToRomanNumeral(50) == 'L'
+    assert roman_numerals.convert_to_roman_numeral(50) == 'L'
 
 def testTwoReturnsII():
-    assert roman_numerals.ConvertToRomanNumeral(2) == 'II'
+    assert roman_numerals.convert_to_roman_numeral(2) == 'II'
  
 def testFourReturnsIV():
-    assert roman_numerals.ConvertToRomanNumeral(4) == 'IV' 
+    assert roman_numerals.convert_to_roman_numeral(4) == 'IV' 
+

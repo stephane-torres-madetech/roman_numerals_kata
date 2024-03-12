@@ -1,5 +1,5 @@
 
-def ConvertToRomanNumeral(num):
+def convert_to_roman_numeral(num):
 
     roman_numerals = {
         1 : 'I',
