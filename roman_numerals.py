@@ -19,7 +19,7 @@ roman_numerals = {
 def convert_to_roman_numeral(num):
 
     result = ''
-
+    # number_length = len(str(num))
     if num <= 10 or num >= 50:
        result = roman_numerals[num]
     elif num > 10 and num <= 20:
@@ -41,3 +41,6 @@ def convert_to_roman_numeral(num):
         result += roman_numerals[units]
     
     return result
+
+def get_number_length(num):
+    return len(str(num))

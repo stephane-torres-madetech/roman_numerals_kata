@@ -36,3 +36,6 @@ def test_forty_returns_XL():
 
 def test_fourty_one_returns_XLI():
     assert roman_numerals.convert_to_roman_numeral(41) == 'XLI'
+
+def test_one_digit_number_returns_1():
+    assert roman_numerals.get_number_length(1) == 1
