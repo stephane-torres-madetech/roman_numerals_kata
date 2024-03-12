@@ -1,7 +1,5 @@
 
-def convert_to_roman_numeral(num):
-
-    roman_numerals = {
+roman_numerals = {
         1 : 'I',
         2 : 'II',
         3 : 'III',
@@ -11,4 +9,7 @@ def convert_to_roman_numeral(num):
         10 : 'X',
         50 : 'L'
     }
+def convert_to_roman_numeral(num):
+
+   
     return roman_numerals[num]
