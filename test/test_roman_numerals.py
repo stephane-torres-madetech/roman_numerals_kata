@@ -45,3 +45,9 @@ def test_two_digit_number_returns_2():
 
 def test_get_number_tens_from_25():
     assert roman_numerals.get_number_of_tens(25) == 2
+
+def test_get_num_of_tens_from_85():
+    assert roman_numerals.get_number_of_tens(85) == 8
+
+def test_get_number_of_units_from_85():
+    assert roman_numerals.get_number_of_units(85) == 5
