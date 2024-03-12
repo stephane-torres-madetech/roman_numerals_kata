@@ -19,26 +19,11 @@ roman_numerals = {
 def convert_to_roman_numeral(num):
 
     result = ''
-    # number_length = len(str(num))
-    if num <= 10 or num >= 50:
-       result = roman_numerals[num]
-    elif num > 10 and num <= 20:
-        result = 'X'
-        units = num - 10
-        result += roman_numerals[units]
-    elif num > 20 and num <= 30:
-        result = 'XX'
-        units = num - 20
-        result += roman_numerals[units]
-    elif num > 30 and num < 40:
-        result = 'XXX'
-        units = num - 30
-        result += roman_numerals[units]
-    else:
-        num >= 40 and num < 50
-        result = 'XL'
-        units = num - 40
-        result += roman_numerals[units]
+    units = roman_numerals[get_number_of_units(num)]
+
+    if get_number_length(num) == 2:
+        result = get_roman_tens(num) + units
+    
     
     return result
 
@@ -52,5 +37,26 @@ def get_number_of_units(num):
 def get_number_of_tens(num):
     string_num = str(num)
     return int(string_num[len(string_num) - 2])
+
+def get_roman_tens(num):
+    result = ''
+    if get_number_of_tens(num) < 4:
+        for i in range(get_number_of_tens(num)):
+            print(i, 'iiiiiiiiiii')
+            print(num, 'num')
+            result += 'X'
+    elif get_number_of_tens(num) == 4:
+        result = 'XL'
+    elif get_number_of_tens(num) == 5:
+        result = 'L'
+    elif get_number_of_tens(num) > 5 and get_number_of_tens(num) < 9:
+        result = 'L'
+        remainder = get_number_of_tens(num) - 5
+        print(remainder, 'tttttttttttttttttttttttt')
+        for i in range(remainder):
+            result += 'X'
+    else: result = 'XC'
+
+    return result
 
 
